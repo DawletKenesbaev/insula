@@ -1,0 +1,101 @@
+footer {
+    background-color: black;
+    padding: 40px;
+    @include mobile {
+        padding:32px 24px;
+    }
+
+}
+.footerbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include tablet {
+        display: none;
+    }
+    &__item {
+        margin-top:32px;
+        display: flex;
+        column-gap: 10px;
+        &-num {
+            font-family: 'PT Root UI Web';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            @include herofirst {
+                font-size: 13px;
+            }
+        }
+        &-link {
+            
+            font-family: 'PT Root UI Web';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            @include herofirst {
+                font-size: 13px;
+            }
+        }
+    }
+}
+.footerlogo {
+    @include herofirst {
+        width: 146px;
+    }
+    @include mobile {
+        width: 56px;
+    }
+}
+.footermobile {
+    display: none;
+   
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        margin-top:32px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        &-num {
+            font-family: 'PT Root UI Web';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            @include herofirst {
+                font-size: 13px;
+            }
+        }
+        &-link {
+            
+            font-family: 'PT Root UI Web';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            @include herofirst {
+                font-size: 13px;
+            }
+        }
+    }
+}

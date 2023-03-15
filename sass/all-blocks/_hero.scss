@@ -1,0 +1,135 @@
+.hero {
+    background-color: $second-background-color;
+ 
+   
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile {
+            text-align: center;
+        }
+      
+    }
+    
+    &__left {
+        max-width: 628px;
+        padding: 124px 0 ;
+        @include tablet {
+            padding: 27px 24px;
+        }
+    }
+    &__title {
+
+        font-family: 'PT Root UI Web';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 130%;
+        color: $primary-text-color;
+        transition: 1s;
+        @include herofirst {
+            font-size: 24pxx;
+        }
+        @include tablet {
+            font-size:12px ;
+        }
+        @include tablet {
+            font-size:24px ;
+        }
+    }
+    &__title:hover {
+        transform: scale(1.1);
+        color: rgb(28, 117, 195);
+    }
+    &__des {
+
+        
+        font-family: 'PT Root UI Web';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 130%;
+        color: $primary-text-color;
+        transition: 1s;
+        margin-top: 32px;
+        margin-bottom: 40px;
+  
+    }
+    &__des:hover {
+        transform: scale(1.1);
+        color: rgb(28, 117, 195);
+    }
+    &__imgmob {
+        display: none;
+        @include mobile {
+            display: block;
+            width: 176px;
+            margin: auto;
+        }
+
+    }
+    &__imgdes {
+        margin-top: 88px;
+        max-width: 436px;
+        @include herofirst {
+            margin-top: 22px;
+            max-width: 336px;
+        }
+        @include tablet {
+            margin-top: 22px;
+            max-width: 176px;
+        }
+        @include mobile {
+            display: none;
+        }
+
+    }
+    &__btn:hover {
+       transform: scale(1.1);
+    }
+    &__btn {
+        width: 216px;
+        height: 64px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: inline-block;
+        transition: 1s;
+        @include herofirst {
+            width: 144px;
+            height: 48px;
+            font-size: 13px;
+        }
+        @include tablet {
+            font-size:10px ;
+            width: 112px;
+            height: 34px;
+        }
+        &-left {
+            color: $second-text-color;
+            background-color: red;
+        }
+        &-right {
+            color: $primary-text-color;
+        }
+    }
+    &__flex {
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+        @include tablet {
+            column-gap: 16px;
+        }
+        @include mobile {
+            margin:0 auto;
+            width: 250px;
+        }
+    }
+}

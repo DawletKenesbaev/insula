@@ -1,0 +1,109 @@
+.gridSection {
+    background-color: $primary-background-color;
+    width: 100%;
+}
+.gridSection1 {
+    background-color: $third-background-color;
+    width: 100%;
+}
+.gridcardsB {
+    display: flex;
+    column-gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    @include mobile {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}
+.gridcards {
+    margin-bottom: 150px;
+    display: flex;
+    column-gap: 80px;
+    @include tablet {
+        flex-direction: column;
+        row-gap: 80px;
+        margin-bottom: 80px;
+    }
+    
+    &__box {
+        margin: 0 auto;
+    }
+    &__title {
+        
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 150%;
+        color: $second-text-color;
+    }
+    &__item {
+        max-width: 150px;
+        min-height: 150px;
+        position: relative ;
+
+    &-line  {
+        position: absolute;
+        top: 0;left: 0;
+        width: 3px;
+        height: 144px;
+        background-color: red;
+    }
+    &-text {
+        font-family: 'PT Root UI Web';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 150%;
+        color: #FFFFFF;
+        position: absolute;
+        left: 16px;
+        top: 0;
+    }
+
+
+        
+    }
+}
+.grid {
+    padding: 50px 0 50px 0;
+    margin-top: 200px 0;
+    background-color: $primary-background-color;
+    &-items {
+        height: 160px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.tablet {
+    display: none;
+    @include tablet  {
+        display: block;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+.desktop {
+    @include tablet  {
+        display: none;
+    }
+}
+.ipad {
+    display: none;
+    @include navbar {
+        display: block;
+    }
+    @include mobile {
+        display: none;
+    }
+}
+.mobile {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}

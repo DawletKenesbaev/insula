@@ -1,0 +1,185 @@
+.form-left {
+    width: 600px;
+    height: 640px;
+    overflow-y: scroll;
+    &__body {
+        padding-left:40px ;
+        background-color: $second-background-color;
+    }
+}
+.form-left {
+    height: 640px; 
+    overflow-y: scroll; 
+    @include tablet {
+        max-width: 500px; 
+    }
+    @include mobile {
+        max-width: 270px;
+        height: 400px;
+    }
+  }
+  .form-left::-webkit-scrollbar {
+    width: 10px; 
+  } 
+  .form-left::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 5px; 
+  }
+  
+.formSection {
+    margin-top: 200px;
+    padding-top: 80px;
+    background-image: url(/images/Background__image.png);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 993px;
+    background-repeat: no-repeat;
+   
+    &__title {
+        margin-top: 80px;
+        margin-bottom: 48px;
+        color: $second-text-color;
+    }
+}
+.form-body {
+    display: flex;
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.form-right {
+    background-color: $third-background-color;
+    width: 600px;
+    height: 640px;
+    @include tablet {
+        margin-top: 24px;
+        max-width: 500px;
+    }
+    @include mobile {
+        max-width: 270px;
+        height: 400px;
+    }
+}
+.form {
+    margin: 20px;
+    &__title {
+        color: $second-text-color;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 130%;
+        margin-bottom: 72px;
+        @include mobile {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+    }
+
+}
+.btnbox {
+    text-align: center;
+    margin-top: 20px;
+}
+.input {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: $third-background-color;
+    color: #FFFFFF;
+    &__span {
+        
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 130%;
+        color:  $second-text-color;
+
+    }
+}
+.form input:nth-child(3) {
+    margin: 64px 0;
+    @include mobile {
+        margin: 40px 0;
+    }
+}
+input::placeholder {
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.5);
+    @include mobile {
+        font-size: 14px;
+    }
+
+}
+.btn {
+    width: 60%;
+    height: 56px;
+    font-family: $font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    color: $second-text-color;
+    border: 1px solid red;
+    @include mobile {
+        font-size: 12px;
+        width: 80%;
+    }
+
+}
+.formSection {
+    position: relative;
+}
+.alert {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: red;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.alert2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: green;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.smallBox {
+    width: 490px;
+    height: 250px;
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+}
+.deleteBtn {
+    width: 210px;
+    height: 40px;
+    margin-left: 100px;
+    background: #EE1B24;
+}
+.deleteBtn2 {
+    width: 210px;
+    height: 40px;
+    margin-left: 100px;
+    background: green;
+}

@@ -1,0 +1,111 @@
+.aboutus {
+    margin: 200px 0 200px 0;
+    background-color: $third-background-color;
+}
+.about{
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+.part1 {
+   max-width: 1300px;
+   padding: 120px 0 119px 50px;
+   @include part1 {
+    padding: 120px 0 119px 0px;
+   }
+
+    
+    &__des {
+        margin-top: 24px;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $second-text-color;
+        transition: 1s;
+    }
+    &__title {
+        margin-bottom: 24px;
+        color: $second-text-color;
+        transition: 1s;
+    }
+}
+.part1__des:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+.part1__title:hover {
+    transform: scale(1.1);
+    color: blue;
+}
+.part2 {
+    background-image: url(/images/Power__plant1__bg.png) ;
+    
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;            
+    row-gap: 20px;
+    @include tablet {
+        padding: 20px 0;
+    }
+    &__box {
+        display: flex;
+        column-gap: 20px;
+        @include tablet {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            row-gap: 20px;
+        }
+    }
+   &__card {
+    width: 200px;
+    height: 200px;
+    background-color: $third-background-color;
+    position: relative;
+    transition: 1s;
+    &-line {
+        width: 4px;
+        height: 114px;
+        background: #EE1B24;
+        position: absolute;
+        top: 0;
+        left: 24px;
+    }
+    &-num {
+        position: absolute;
+        font-size: 46px;
+        left: 34px;
+        top: 64px;
+        color:  $second-text-color;
+        
+    }
+    &-span {
+        position: absolute;
+        font-size: 16px;
+        left: 34px;
+        top: 110px;
+        color:  $second-text-color;
+        margin-top: 5px;
+        @include tablet {
+            font-size: 10px;
+        }
+    }
+    @include herofirst {
+        width: 170px;
+        height: 170px;
+    }
+   }
+}
+.part2__card:hover {
+  transform: scale(1.1);
+}
